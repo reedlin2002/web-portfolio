@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon...</title>
+    <link rel="icon" type="image/x-icon" href="mouse.png">
+    <link rel="stylesheet" href="style.css"> <!-- 引入主頁的 CSS 樣式 -->
+    <style>
+        body {
+        background: url('background.jpg') no-repeat center fixed; /* 背景圖片設定：置中並固定 */
+        color: #fff;
+        display: flex; /* 使用 Flexbox 排版 */
+        justify-content: center; /* 水平置中 */
+        align-items: center; /* 垂直置中 */
+        height: 100vh; /* 讓 body 高度佔滿整個視窗 */
+    }
+
+    .coming-soon {
+        font: bold italic 120px 'Cinzel', serif;
+        text-align: center;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* 文字陰影效果 */
+    }
+    </style>
+</head>
+<body>
+    <!-- 頂部導航欄 -->
+    <nav class="top-nav">
+        <!-- LOGO -->
+       <a href="main.html" class="logo">
+           <img src="logo.jpg" alt="網站 Logo">
+       </a>
+
+       <a href="main.html">首頁</a>
+       <a href="https://chainsawman.dog/tvseries/introduction/" target="_blank">介紹</a>
+       <a href="https://chainsawman.dog/tvseries/episodes/" target="_blank" >動畫第一季</a>
+       <a href="https://chainsawman.dog/tvseries/comics/" target="_blank">漫畫</a>
+       <a href="https://chainsawman.dog/goods/" target="_blank">商品</a>
+       <a href="contact.html">聯絡我們</a>
+   </nav>
+
+    <div class="coming-soon">
+        Coming Soon...
+    </div>
+    <img src="mouse.png" alt="Coming Soon" class="coming-soon-image">
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* 社群按鈕區塊樣式 */
+.social-media {
+    display: flex;
+    justify-content: center; /* 置中 */
+    gap: 20px; /* 按鈕間距 */
+    margin-top: 30px;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 30px;
+    font-style: italic;
+    color: white;
+    text-decoration: none;
+}
+.social-icon:hover {
+    transform: scale(1.1); /* 懸停時放大效果 */
+    color:#fa0;
+}
+
+/* YouTube影片樣式 */
+.youtube-video {
+    display: flex; /* 使用 flexbox 來置中 */
+    justify-content: center; /* 水平置中 */
+    margin: 20px 0; /* 上下邊距 */
+}
+
+/* logo */
+.logo {
+    padding: 10px; /* 內邊距 */
+    backdrop-filter: brightness(0.5); /* 降低背景亮度 */
+    max-width: 800px;
+}
+.logo:hover {
+    background-color : #fa0;
+}
+
+/* 頂部導航欄 */
+.top-nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    position:fixed;
+    top: 0;
+    width: 100%; /* 寬度撐滿 */
+    padding: 10px 0; /* 上下內邊距 */
+    z-index: 1000; /* 在最上層 */  
+}
+
+/* 導航連結樣式 */
+.top-nav a {
+    color: #FFD700;
+    font: bold 18px 'Cinzel', serif;
+    margin: 0 15px; /* 左右間距 */
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* 過渡效果 */
+}
+
+/* 懸停效果 */
+.top-nav a:hover {
+    background-color: #fa0; /* 懸停時背景色變化 */
+    color: #000; /* 懸停時字體顏色變化 */
+}
+
+.character-item:hover {
+    animation: float 1s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

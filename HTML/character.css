@@ -1,0 +1,58 @@
+.character-info {
+    max-width: 800px;
+    margin: 20px auto; /* 置中 */
+    padding: 20px;
+    font: bold italic 15px 'Cinzel', serif; /* 字體設定 */
+    backdrop-filter: brightness(0.5);
+    border-radius: 8px; /* 邊角 */
+    display: flex;
+    align-items: center; /* 垂直置中 */
+}
+
+.character-img {
+    width: 200px; /* 固定寬度 */
+    height: auto; /* 高度自動調整 */
+    border-radius: 8px; /* 圖片邊角 */
+    object-fit: contain; /* 圖片完整顯示，保持比例 */
+    margin-right: 20px; /* 右側外邊距 */
+    transition: opacity 0.3s; /* 添加過渡效果 */
+}
+
+.move {
+    transform: translateY(20px); /* 向下移動 */
+    animation: fadeIn 1s forwards; /* 使用fadeIn動畫 */
+}
+@keyframes fadeIn {
+    to {
+        transform: translateY(0); /* 恢復位置 */
+        top:0;
+    }
+}
+
+/* 相關角色區塊 */
+.related-characters {
+    margin-top: 20px; /* 讓相關角色區塊與標題有間距 */
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    align-items: center;
+}
+
+/* 角色連結樣式 */
+.related-characters a {
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* 過渡效果 */
+}
+
+
+/* 加入箭頭效果 */
+.related-characters a::before {
+    content: '→ '; /* 左邊加箭頭 */
+    opacity: 0;
+    transition: opacity 0.3s ease, left 0.3s ease; /* 箭頭過渡效果 */
+}
+
+/* 當鼠標懸停在角色名稱上時，箭頭顯示 */
+.related-characters a:hover::before {
+    opacity: 1;
+}

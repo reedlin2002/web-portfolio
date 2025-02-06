@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Introduction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="mouse.png">
+    <style>
+        /* 設定整個畫面的背景圖片，填滿且固定位置 */
+        body {
+            background: url('background.jpg') no-repeat center fixed; /* 背景圖片設定：置中並固定 */
+            color: #fff;
+            padding-top: 70px; /* 確保內容與導航欄不重疊 */
+        }
+
+        /* 標題樣式 */
+        h1 {
+            text-align: center; /* 置中 */
+            margin-top: 20px; /* 頂部的外邊距 */
+            margin-bottom: 20px; /* 底部的外邊距 */
+            color: #FFD700;
+            font: bold italic 36px 'Cinzel', serif; /* 字體設定 */
+            text-shadow: 4px 4px 2px #000;
+        }
+
+        /* 角色卡片網格樣式 */
+        .character-grid {
+            display: grid; /* 使用 grid 佈局 */
+            grid-template-columns: repeat(4, minmax(150px, 1fr)); /* 自動調整每列包含的卡片數量 */
+            backdrop-filter: brightness(0.5); /* 降低背景亮度 */
+            gap: 20px; /* 卡片間距 */
+            max-width: 800px; /* 設定最大寬度以保持美觀 */
+            padding: 20px; /* 內邊距，與螢幕邊緣保持距離 */
+            margin: 0 auto; /* 置中網格容器 */
+        }
+
+        /* 單個角色卡片樣式 */
+        .character-item {
+            background: rgba(255, 255, 255, 0.1); /* 卡片背景 */
+            padding: 10px; /* 間距 */
+            border-radius: 8px; /* 邊角 */
+        }
+
+        /* 角色圖片樣式 */
+        .character-item img {
+            width: 100%; /* 設定圖片寬度撐滿卡片 */
+            height: 300px; /* 固定高度 */
+            object-fit: contain; /* 圖片完整顯示，保持比例 */
+            border-radius: 8px; /* 邊角 */
+        }
+
+        /* 卡片懸停效果 */
+        .character-item:hover img {
+            transform: scale(1.05); /* 鼠標懸停時圖片放大 */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 頂部導航欄 -->
+    <nav class="top-nav">
+         <!-- LOGO -->
+        <a href="main.html" class="logo">
+            <img src="logo.jpg" alt="網站 Logo">
+        </a>
+
+        <a href="main.html">首頁</a>
+        <a href="https://chainsawman.dog/tvseries/introduction/" target="_blank">介紹</a>
+        <a href="https://chainsawman.dog/tvseries/episodes/" target="_blank" >動畫第一季</a>
+        <a href="https://chainsawman.dog/comics/" target="_blank">漫畫</a>
+        <a href="https://chainsawman.dog/goods/" target="_blank">商品</a>
+        <a href="contact.html">聯絡我們</a>
+    </nav>
+
+    <!-- 頁面標題 -->
+    <h1>Character Introduction</h1>
+
+    <!-- 角色卡片網格 -->
+    <div class="character-grid">
+        <div class="character-item">
+            <a href="denji.html">
+                <img src="1.jpg" alt="角色1">
+            </a>
+        </div>
+        <div class="character-item">
+            <a href="makima.html">
+                <img src="2.jpg" alt="角色2">
+            </a>
+        </div>
+        <div class="character-item">
+            <a href="aki.html">
+                <img src="3.jpg" alt="角色3">
+            </a>
+        </div>
+        <div class="character-item">
+            <a href="power.html">
+                <img src="4.jpg" alt="角色4">
+            </a>
+        </div>
+    </div>
+
+    <!-- YouTube影片 -->
+    <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/q15CRdE5Bv0?si=I8y6GztLRNcO_76j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- 社群按鈕區塊 -->
+    <div class="social-media">
+        <a href="https://chainsawman.dog/" target="_blank" class="social-icon">OFFICAL</a>
+        <a href="https://twitter.com/chainsawman_pr" target="_blank" class="social-icon">TWITTER</a>
+        <a href="https://anime-chainsawmanten.dog/" target="_blank" class="social-icon">SHOWS</a>
+    </div>
+</body>
+</html>
