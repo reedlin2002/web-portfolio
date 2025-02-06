@@ -1,5 +1,5 @@
 # web-portfolio
-這是我的 Web 作品集，包含了我所做的 HTML 和 PHP 專案。
+這是我的 Web 作品集，包含了我所做的 HTML 和 PHP 專案。 持續更新中...
 
 ## HTML 作品
 
